@@ -5,23 +5,30 @@
       href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
     />
     <div class="top-nav">
-      <div class="logo1">
-        <img src="./assets/top-navbar/icon-logo.png" />
-      </div>
-      <div class="logo2">
-        <img src="./assets/top-navbar/text-logo.png" />
+      <div class="logo">
+        <div class="logo1">
+          <img src="./assets/top-navbar/icon-logo.png" />
+        </div>
+        <div class="logo2">
+          <img src="./assets/top-navbar/text-logo.png" />
+        </div>
       </div>
 
       <div class="all_button">
         <div class="nav_button">
-          <router-link to="/"><b-button>Home</b-button></router-link>
+          <router-link to="/"
+            ><b-button id="nav-button">Home</b-button></router-link
+          >
         </div>
         <div class="nav_button">
-          <router-link to="/booking"><b-button>Booking</b-button></router-link>
+          <router-link to="/booking"
+            ><b-button id="nav-button">Booking</b-button></router-link
+          >
         </div>
         <div class="nav_button">
           <router-link to="/contect">
-            <b-button>Contact us</b-button></router-link>
+            <b-button id="nav-button">Contact us</b-button></router-link
+          >
         </div>
       </div>
     </div>
@@ -42,51 +49,64 @@
 }
 
 .top-nav {
+  display: flex;
+  justify-content: space-between;
+
   width: 100%;
   height: 85px;
   background-color: black;
 }
 
+.logo {
+  display: flex;
+}
 .logo1 {
-  margin-top: 10px;
-  position: absolute;
-  margin-left: 50px;
+  margin-left: 64.96px;
+  margin-top: 15px;
+  padding: 0;
 }
 
 .logo2 {
+  margin-left: -8px;
   margin-top: 29px;
-  position: absolute;
-  margin-left: 90px;
 }
 
 .all_button {
-  a {
-    font-weight: bold;
-    color: white;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 48px;
 }
 
-.nav_button {
-  font-size: 20px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
+// .nav_button {
+//   font-size: 20px;
+//   text-decoration: none;
+//   text-align: center;
 
-  height: 30px;
-  margin-top: 30px;
-  margin-left: 30px;
+//   margin-left: 50px;
 
-  transition-duration: 0.4s;
-  cursor: pointer;
+//   transition-duration: 0.4s;
+//   cursor: pointer;
+// }
+
+// .nav_button:hover {
+//   background: linear-gradient(180deg, #fca311 0%, #fcc600 100%);
+//   border-radius: 16.5px;
+//   color: #fcc600;
+// }
+</style>
+
+<style scoped>
+#nav-button {
+  background-color: #ffffff00;
+  margin-left: 50px;
+  font-weight: normal;
+  
+  border: 0;
+  padding: 0;
 }
 
-.nav_button:hover {
-  background: linear-gradient(180deg, #fca311 0%, #fcc600 100%);
-  border-radius: 16.5px;
-  color: #1e1d1e;
+#nav-button:hover {
+  color: #fcc600;
 }
 </style>
