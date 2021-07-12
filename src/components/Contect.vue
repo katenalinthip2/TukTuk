@@ -1,7 +1,7 @@
 <template>
-  <b-container>
+  <div id="contect">
     <h1>Contect page</h1>
-  </b-container>
+  </div>
 </template>
 
 <script>

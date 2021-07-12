@@ -1,7 +1,7 @@
 <template>
-  <b-container>
+  <div id="booking">
     <h1>Booking page</h1>
-  </b-container>
+  </div>
 </template>
 
 <script>

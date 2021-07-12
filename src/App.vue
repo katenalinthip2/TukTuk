@@ -30,6 +30,11 @@
             <b-button id="nav-button">Contact us</b-button></router-link
           >
         </div>
+        <div class="nav_button">
+          <router-link to="/profile">
+            <b-button id="nav-button">Profile</b-button></router-link
+          >
+        </div>
       </div>
     </div>
     <router-view />
@@ -77,23 +82,6 @@
   margin-bottom: auto;
   margin-right: 48px;
 }
-
-// .nav_button {
-//   font-size: 20px;
-//   text-decoration: none;
-//   text-align: center;
-
-//   margin-left: 50px;
-
-//   transition-duration: 0.4s;
-//   cursor: pointer;
-// }
-
-// .nav_button:hover {
-//   background: linear-gradient(180deg, #fca311 0%, #fcc600 100%);
-//   border-radius: 16.5px;
-//   color: #fcc600;
-// }
 </style>
 
 <style scoped>
@@ -106,7 +94,9 @@
   padding: 0;
 }
 
-#nav-button:hover {
+#nav-button:active, :hover, :focus {
   color: #fcc600;
+  border: none;
+  box-shadow: none;
 }
 </style>
