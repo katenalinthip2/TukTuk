@@ -122,6 +122,11 @@ export default {
   color: #1e1d1e;
 }
 
+.white-button:hover, :focus {
+  color: #fcc600;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
 .orange-button {
   margin-top: 22px;
 
@@ -137,6 +142,11 @@ export default {
   font-size: 18px;
   font-weight: bold;
   color: #1e1d1e;
+}
+
+.orange-button:hover, :focus {
+  color: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
 
 .line {
