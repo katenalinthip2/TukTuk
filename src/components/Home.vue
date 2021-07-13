@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <div id="home">
     <div class="background">
       <div class="text1">
         <img
@@ -8,7 +8,7 @@
         />
       </div>
     </div>
-  </b-container>
+  </div>
 </template>
 
 <script>
