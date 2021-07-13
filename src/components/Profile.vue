@@ -19,7 +19,48 @@
         </div>
       </div>
       <div class="line"></div>
-      <div></div>
+      <div class="infomation">
+        <b-form-input
+          type="text"
+          value="นางสาวจิตใจดี ขอบคุณค่ะ"
+        ></b-form-input>
+        <b-form-input
+          type="tel"
+          placeholder="Jitjaidee@email.com"
+          disabled
+        ></b-form-input>
+        <b-form-input type="email" value="012-345-6789"></b-form-input>
+        <b-form-input type="text" value="1125468795632"></b-form-input>
+
+        <!-- name -->
+        <b-form-group
+          label="ชื่อ-นามสกุล"
+          label-for="input-1"
+        >
+          <b-form-input
+            type="text"
+            placeholder="Enter email"
+            value="นางสาวจิตใจดี ขอบคุณค่ะ"
+            required
+          ></b-form-input>
+        </b-form-group>
+
+        <!-- email -->
+        <b-form-group
+          label="Email address:"
+          label-for="input-1"
+        >
+          <b-form-input
+            type="email"
+            placeholder="Enter email"
+            value="Jitjaidee@email.com"
+            required
+            disabled
+          ></b-form-input>
+        </b-form-group>
+
+
+      </div>
     </div>
   </div>
 </template>
@@ -122,7 +163,8 @@ export default {
   color: #1e1d1e;
 }
 
-.white-button:hover, :focus {
+.white-button:hover,
+:focus {
   color: #fcc600;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
@@ -144,7 +186,8 @@ export default {
   color: #1e1d1e;
 }
 
-.orange-button:hover, :focus {
+.orange-button:hover,
+:focus {
   color: #ffffff;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
@@ -156,5 +199,9 @@ export default {
   width: 0px;
   height: 472px;
   border: 1px solid rgba(252, 163, 17, 0.45);
+}
+
+.infomation {
+  display: block;
 }
 </style>
